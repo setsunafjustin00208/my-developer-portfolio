@@ -12,7 +12,7 @@
             Justin Ed Pierre Tecson
           </h1>
           <h2 class="subtitle" data-aos="fade-left">
-            Full Stack Developer
+            Front-end And Back-End Web Developer
           </h2>
         </div>
       </div>
