@@ -21,10 +21,14 @@
     <section class="section" data-aos="fade-up">
       <div class="container">
         <h3 class="title has-text-centered">About Me</h3>
-        <div class="content has-text-centered">
-          <p>
-            Passionate developer with experience in building web applications using modern technologies.
-          </p>
+        <div class="card">
+          <div class="card-content">
+            <div class="content has-text-centered">
+              <p>
+                Passionate developer with experience in building web applications using modern technologies.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -185,17 +189,6 @@ export default {
       const currentTheme = html.getAttribute('data-theme');
       const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
       html.setAttribute('data-theme', newTheme);
-    }
-  },
-  mounted() {
-    this.startMatrixRain();
-  },
-  methods: {
-    toggleDarkMode() {
-      const html = document.documentElement;
-      const currentTheme = html.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      html.setAttribute('data-theme', newTheme);
     },
     startMatrixRain() {
       const canvas = document.getElementById('matrix-rain');
@@ -231,6 +224,9 @@ export default {
 
       setInterval(draw, 33);
     }
+  },
+  mounted() {
+    this.startMatrixRain();
   }
 }
 </script>
