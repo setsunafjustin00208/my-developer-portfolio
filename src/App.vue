@@ -112,7 +112,7 @@
               <div class="card-content">
                 <div class="columns is-vcentered">
                   <div class="column is-narrow">
-                    <i :class="hobby.icon" class="icon is-large" style="font-size: 2.5em;"></i>
+                    <i class="material-icons" style="font-size: 2.5em;">{{ hobby.icon }}</i>
                   </div>
                   <div class="column">
                     <p class="title">{{ hobby.name }}</p>
@@ -170,12 +170,12 @@ export default {
         { name: 'VB.Net', icon: 'fas fa-code' }
       ],
       hobbies: [
-        { name: 'Plastic model building', icon: 'fas fa-tools' },
-        { name: 'Chess', icon: 'fas fa-chess' },
-        { name: 'Badminton', icon: 'fas fa-badminton' },
-        { name: 'Gaming', icon: 'fas fa-gamepad' },
-        { name: 'Writing essays', icon: 'fas fa-pen' },
-        { name: 'Singing', icon: 'fas fa-microphone' }
+        { name: 'Plastic model building', icon: 'build' },
+        { name: 'Chess', icon: 'sports_esports' },
+        { name: 'Badminton', icon: 'sports_tennis' },
+        { name: 'Gaming', icon: 'videogame_asset' },
+        { name: 'Writing essays', icon: 'edit' },
+        { name: 'Singing', icon: 'mic' }
       ]
     }
   },
