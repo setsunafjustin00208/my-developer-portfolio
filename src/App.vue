@@ -134,7 +134,7 @@ export default {
         { id: 1, degree: 'Kindergarten', institution: 'Candaba Ecumenical Learning Center', year: '2004 - 2006' },
       ],
       workplaceList: [
-        { id: 1, name: 'GMA New Media Inc.', address: '12F GMA Network Center, EDSA cor Timog Avenue, Quezon City, PH 1101', year: '2022 -Current' }
+        { id: 1, name: 'GMA New Media Inc.', address: '12F GMA Network Center, EDSA cor Timog Avenue, Quezon City, PH 1101', year: '2022 - Current' }
       ],
       skills: [
         { name: 'HTML', icon: 'fab fa-html5' },
