@@ -103,6 +103,27 @@
         </div>
       </div>
     </section>
+    <section class="section" data-aos="fade-up">
+      <div class="container">
+        <h3 class="title has-text-centered">Hobbies</h3>
+        <div class="columns is-multiline">
+          <div class="column is-full-mobile is-one-third-tablet" v-for="hobby in hobbies" :key="hobby.name">
+            <div class="card">
+              <div class="card-content">
+                <div class="columns is-vcentered">
+                  <div class="column is-narrow">
+                    <i :class="hobby.icon" class="icon is-large" style="font-size: 2.5em;"></i>
+                  </div>
+                  <div class="column">
+                    <p class="title">{{ hobby.name }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
@@ -147,6 +168,14 @@ export default {
         { name: 'C# (Unity)', icon: 'fas fa-code' },
         { name: 'Java', icon: 'fab fa-java' },
         { name: 'VB.Net', icon: 'fas fa-code' }
+      ],
+      hobbies: [
+        { name: 'Plastic model building', icon: 'fas fa-tools' },
+        { name: 'Chess', icon: 'fas fa-chess' },
+        { name: 'Badminton', icon: 'fas fa-badminton' },
+        { name: 'Gaming', icon: 'fas fa-gamepad' },
+        { name: 'Writing essays', icon: 'fas fa-pen' },
+        { name: 'Singing', icon: 'fas fa-microphone' }
       ]
     }
   },
