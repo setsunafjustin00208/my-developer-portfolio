@@ -1,5 +1,5 @@
 <template>
-    <div id="app" data-theme="">
+    <div id="app">
       <section class="hero is-fullheight">
         <img src="@/assets/images/background.jpg" alt="Background Image" class="hero-background">
         <div class="hero-body" data-aos="fade-up">
@@ -7,10 +7,10 @@
             <figure class="image is-128x128 is-inline-block" data-aos="zoom-in">
               <img class="is-rounded" src="@/assets/images/profile-cropped.jpg" alt="Profile Picture">
             </figure>
-            <h1 class="title" data-aos="fade-right">
+            <h1 class="title" data-theme="dark" data-aos="fade-right">
               Justin Ed Pierre Tecson
             </h1>
-            <h2 class="subtitle" data-aos="fade-left">
+            <h2 class="subtitle" data-theme="dark" data-aos="fade-left">
               Full Stack Developer
             </h2>
           </div>
@@ -102,6 +102,17 @@
           </div>
         </div>
       </section>
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Developer Portfolio</strong> by Justin Ed Pierre Tecson. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+            <br>
+            <a href="https://github.com/setsunafjustin00208">GitHub Profile</a>
+          </p>
+        </div>
+      </footer>
+      <button class="dark-mode-toggle" @click="toggleDarkMode">🌓</button>
     </div>
   </template>
   
@@ -122,7 +133,7 @@
           { id: 1, degree: 'Kindergarten', institution: 'Candaba Ecumenical Learning Center', year: '2004 - 2006' },
         ],
         workplaceList: [
-          { id: 1, name: 'GMA New Media Inc.', address: '12F GMA Network Center, EDSA cor Timog Avenue, Quezon City, PH 1101', year: '2022 - Current' }
+          { id: 1, name: 'GMA New Media Inc.', address: '12F GMA Network Center, EDSA cor Timog Avenue, Quezon City, PH 1101', year: '2022 -Current' }
         ],
         skills: [
           { name: 'HTML', icon: 'fab fa-html5' },
@@ -137,11 +148,19 @@
           { name: 'VB.Net', icon: 'fas fa-code' }
         ]
       }
+    },
+    methods: {
+      toggleDarkMode() {
+        const html = document.documentElement;
+        const currentTheme = html.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', newTheme);
+      }
     }
   }
   </script>
   
-  <style>
+  <style scoped>
   body {
     font-family: 'Arial', sans-serif;
   }
@@ -177,5 +196,19 @@
     .card-content {
       padding: 1rem;
     }
+  }
+  
+  .dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
   }
   </style>
