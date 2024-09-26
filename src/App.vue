@@ -25,7 +25,7 @@
           <div class="card-content">
             <div class="content has-text-centered">
               <p>
-                Passionate developer with experience in building web applications using modern technologies.
+                Passionate developer with experience in building web applications. Ready to learn new technologies.
               </p>
             </div>
           </div>
