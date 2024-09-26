@@ -25,7 +25,7 @@
           <div class="card-content">
             <div class="content has-text-centered">
               <p>
-                Passionate developer with experience in building web applications using modern technologies.
+                Passionate developer with experience in building web applications. Ready to learn new technologies.
               </p>
             </div>
           </div>
@@ -70,13 +70,13 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>  
       </div>
     </section>
 
     <section class="section" data-aos="fade-up">
       <div class="container">
-        <h3 class="title has-text-centered">Current Workplace</h3>
+        <h3 class="title has-text-centered">Compainies I worked</h3>
         <div class="columns is-multiline">
           <div class="column is-full-mobile is-one-third-tablet" v-for="workplace in workplaceList" :key="workplace.id">
             <div class="card">
@@ -171,7 +171,9 @@ export default {
         { name: 'Python', icon: 'fab fa-python' },
         { name: 'C# (Unity)', icon: 'fas fa-code' },
         { name: 'Java', icon: 'fab fa-java' },
-        { name: 'VB.Net', icon: 'fas fa-code' }
+        { name: 'VB.Net', icon: 'fas fa-code' },
+        { name: 'Angular', icon: 'fab fa-angular' },
+        { name: 'Vue.js', icon: 'fab fa-vuejs' }
       ],
       hobbies: [
         { name: 'Plastic model building', icon: 'build' },
