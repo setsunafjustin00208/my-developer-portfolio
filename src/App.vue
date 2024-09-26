@@ -138,7 +138,6 @@
         </p>
       </div>
     </footer>
-    <button class="dark-mode-toggle" @click="toggleDarkMode">🌓</button>
   </div>
 </template>
 
